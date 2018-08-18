@@ -1,67 +1,51 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
-var quote;
-var author;
+  var quote;
+  var author;
 
-  function getTheQuote(){
+  function getTheQuote() {
     $.ajax({
       url: "https://api.forismatic.com/api/1.0/",
       jsonp: "jsonp",
       dataType: "jsonp",
-      data:{
+      data: {
         method: "getQuote",
         lang: "en",
         format: "jsonp"
       },
-      success: function(data) {
+      success: function (data) {
         quote = data.quoteText;
         author = data.quoteAuthor;
 
-        $(".quote").html(quote); 
+        $(".quote").html(quote);
 
         // check if author is provided
-        if(author){
+        if (author) {
           $(".author").html("- " + author);
-          }
-        else{
-            $(".author").html("- Unknown")
-            }
         }
-      });
-    };
+        else {
+          $(".author").html("- Unknown")
+        }
+      }
+    });
+  };
 
-getTheQuote(); //call function to load initial quote
+  getTheQuote(); //call function to load initial quote
 
-$(".new_post").click(function(event){
-  event.preventDefault();
-  getTheQuote();
-});
-//call function when new quote button is clicked
+  $(".new_post").click(function (event) {
+    event.preventDefault();
+    getTheQuote();
+  });
+  //call function when new quote button is clicked
 
-function tweetQuote(){
-    // event.preventDefault();
+  function tweetQuote() {
     window.open("https://twitter.com/intent/tweet?text=" + encodeURIComponent(quote + " ---  " + author));
-}
+  }
 
-$(".tweet").click(function(){
-  // event.preventDefault();
-  tweetQuote();
+  $(".tweet").click(function () {
+    tweetQuote();
+  });
+
 });
 
-});
 
-/*  - MY ORIGINAL ATTEMPT!!
-$(document).ready(function(){
-  $(".new_post").click(function(){
-    $.getJSON("https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=parseQuote=?", function(data){
-      $(".quote").html(data.quoteText);
-      $(".author").html(data.quoteAuthor);
-    });
-
-    });
-    $(".tweet").click(function(){
-      window.open("https://twitter.com/intent/tweet?text=" + encodeURIcomponent())
-
-    });
-
-  });*/
