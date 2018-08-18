@@ -1,6 +1,8 @@
+ /* #97a7c1 */
 body{
-  background:  url(white_carbonfiber.png) #97a7c1;
-  font-family: 'Roboto', sans-serif;
+  background-image:  url('white_carbonfiber.png');
+
+  font-family: 'PT Serif', serif;
 }
 
 #page_header{  
