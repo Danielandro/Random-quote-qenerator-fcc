@@ -1,30 +1,37 @@
- /* #97a7c1 */
-body{
-  background-image:  url('white_carbonfiber.png');
+*{
+  box-sizing: border-box;
+}
 
+html, body{
+  background-image:  url("classy-fabric.png");
+  background-color:  #2fb7e0;
   font-family: 'PT Serif', serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: auto;
 }
 
 #page_header{  
-  width: 600px;
-  margin: 60px auto;
-  text-align: center;
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 20px;
+  width: 60%;
+  margin: 100px auto;
+  text-align: center;  
+  font-size: 1.4em;
 }
 
 .quote_body{
   background: white;
-  max-height: 15em;
+  /* max-height: 15em; */
   max-width:40em;
   margin: 50px auto;
   border-radius: 10px;
-  transition-duration: 0.5s
-
+  transition-duration: 0.5s;
+  font-weight: bold; 
+  box-shadow: 0 1px 3px 3px; 
 }
 
 .quote{
-  font-family: 'Roboto', sans-serif;  
+  /* font-family: 'Roboto', sans-serif;   */
   margin-top: 40px;
   padding: 30px;
   text-align: center;
@@ -49,7 +56,7 @@ body{
   background: #555555;
   border-radius: 4px;
   border-style: none;
-  font-family: 'Fira Sans', sans-serif;
+  /* font-family: 'Fira Sans', sans-serif; */
   font-size: 1.5em;
   left: 50%;
 }
@@ -59,7 +66,7 @@ body{
   background: #555555;
   border-radius: 4px;
   border-style: none;
-  font-family: 'Fira Sans', sans-serif;
+  /* font-family: 'Fira Sans', sans-serif; */
   font-size: 1.5em;
   left: 40%;
 
