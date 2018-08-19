@@ -9,7 +9,7 @@ html, body{
   margin: 0;
   padding: 0;
   height: 100%;
-  width: auto;
+  width: auto;  
 }
 
 #page_header{  
@@ -20,18 +20,17 @@ html, body{
 }
 
 .quote_body{
-  background: white;
-  /* max-height: 15em; */
-  max-width:40em;
+  background: white;  
+  max-width: 50%;
   margin: 50px auto;
   border-radius: 10px;
-  transition-duration: 0.5s;
   font-weight: bold; 
-  box-shadow: 0 1px 3px 3px; 
+  box-shadow: -9px 11px 14px 3px #333232; 
+  letter-spacing: 0.12rem;
 }
 
 .quote{
-  /* font-family: 'Roboto', sans-serif;   */
+  font-family: 'Roboto', sans-serif;  
   margin-top: 40px;
   padding: 30px;
   text-align: center;
