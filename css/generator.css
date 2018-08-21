@@ -9,13 +9,12 @@ html, body{
   margin: 0;
   padding: 0;
   height: 100%;
-  width: auto;
-  /* position: relative; */
+  width: auto; 
 }
 
 #page_header{  
   width: 60%;
-  margin: 80px auto;
+  margin: 5% auto;
   text-align: center;  
   font-size: 1.4rem;
 }
@@ -28,7 +27,7 @@ html, body{
   font-weight: bold; 
   box-shadow: -9px 11px 14px 3px #333232; 
   font-family: 'Roboto', sans-serif; 
-  letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem; 
 }
 
 .quote{
@@ -45,35 +44,21 @@ html, body{
 }
 
 .buttons{
-  padding: 20px;  
-  text-align: center; 
-  max-width: 20%;
-  margin: 0;  
-  position: relative;  
-  display: inline;
-  left: 50%;
-  right: 50%;
+  /* padding: 20px;    */
+  width: 20%;
+  /* min-width: 20%; */
+  margin: 0 auto;   
+  overflow: auto;
 }
 
 button {
   background: #555555;
   color: white;
-  font-size: 1.5em;
+  font-size: 1.2em;
   border: 3px solid black;
   border-radius: 10px;
   padding: 5px 10px;
-  /* position: absolute; */
-  
+  display: inline-block;
+  margin: 0 auto;  
 }
 
-/* #new_post{     
-  left: 50%;
-  float: left; 
-}
-
-#tweet{
-  margin: 30px;  
-  left: 40%; 
-  float: right; 
-  right: 50%;
-} */
