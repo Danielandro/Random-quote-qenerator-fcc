@@ -32,8 +32,7 @@ $(document).ready(function () {
 
   getTheQuote(); //call function to load initial quote
 
-  $(".new_post").click(function (event) {
-    event.preventDefault();
+  $("#new_post").click(function() {   
     getTheQuote();
   });
   //call function when new quote button is clicked
@@ -42,7 +41,7 @@ $(document).ready(function () {
     window.open("https://twitter.com/intent/tweet?text=" + encodeURIComponent(quote + " ---  " + author));
   }
 
-  $(".tweet").click(function () {
+  $("#tweet").click(function() {
     tweetQuote();
   });
 
